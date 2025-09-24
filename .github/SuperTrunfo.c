@@ -22,6 +22,8 @@ int main(){
     float percap1;
     float dpopu2;
     float percap2;
+    float spoder1;
+    float spoder2;
 /*declarando variaveis de calculo*/
     printf("Dados da Carta 1\n");
     printf("Digite a letra do estado: \n");
@@ -74,6 +76,8 @@ int main(){
     percap1 = pib1 / populacao1;
     percap2 = pib2 / populacao2;
     /*Calculando com operador matemitico de divisao*/
+
+    
 
     printf("Carta 1 \n");
     printf("Estado: %s\n", estado1);
