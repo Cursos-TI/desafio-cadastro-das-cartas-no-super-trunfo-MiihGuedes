@@ -25,6 +25,16 @@ int main(){
     float spoder1;
     float spoder2;
 /*declarando variaveis de calculo*/
+
+    int resulpopu;
+    int resularea;
+    int resulpib;
+    int resulnp;
+    int resuldpopu;
+    int resulpercap;
+    int resulspoder;
+
+/*declarando variaveis para comparação*/
     printf("Dados da Carta 1\n");
     printf("Digite a letra do estado: \n");
     scanf("%s", &estado1);
@@ -80,7 +90,13 @@ int main(){
     spoder1 = (float) populacao1 + area1 + pib1 + npturistico1 + percap1 + dpopu1;
     spoder2 = (float) populacao2 + area2 + pib2 + npturistico2 + percap2 + dpopu2;
 /*Calculando com operador matemitico de adição*/
-
+    resularea = area1 > area2;
+    resulpopu = populacao1 > populacao2;
+    resulpib = pib1 > pib2;
+    resulpercap = percap1 > percap2;
+    resulnp = npturistico1 > npturistico2;
+    resuldpopu = dpopu1 > dpopu2;
+    resulspoder = spoder1 > spoder2;
 
     printf("Carta 1 \n");
     printf("Estado: %s\n", estado1);
@@ -107,6 +123,14 @@ int main(){
     printf("O Super Poder é:%.2f\n",spoder2);
 /*imprimindo dados da carta 2*/
 
+    printf("Comparação de cartas \n");
+    printf("Populaçaõ: %s \n", resulpopu);
+    printf("Area: %s \n", resularea);
+    printf("Pib: %s \n", resulpib);
+    printf("Pontos Turisticos: %s \n", resulnp);
+    printf("Densidade Populacional: %s \n", resuldpopu);
+    printf("Pib Per Capita: %s \n", resulpercap);
+    printf("Super Poder: %s \n", resulspoder);
     
     return 0;
 
