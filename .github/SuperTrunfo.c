@@ -77,7 +77,10 @@ int main(){
     percap2 = pib2 / populacao2;
     /*Calculando com operador matemitico de divisao*/
 
-    
+    spoder1 = (float) populacao1 + area1 + pib1 + npturistico1 + percap1 + dpopu1;
+    spoder2 = (float) populacao2 + area2 + pib2 + npturistico2 + percap2 + dpopu2;
+/*Calculando com operador matemitico de adição*/
+
 
     printf("Carta 1 \n");
     printf("Estado: %s\n", estado1);
@@ -89,6 +92,7 @@ int main(){
     printf("Números de Pontos Turísticos: %d \n", npturistico1);
     printf("A densidade populacional é:%.2f\n",dpopu1);
     printf("O Pibper Capital é:%.2f\n",percap1);
+    printf("O Super Poder é:%.2f\n",spoder1);
 /*imprimindo dados da carta 1*/
     printf("Carta 2 \n");
     printf("Estado: %s \n", estado2);
@@ -100,6 +104,7 @@ int main(){
     printf("Números de Pontos Turísticos: %d \n", npturistico2);
     printf("A densidade populacional é:%.2f\n",dpopu2);
     printf("O Pibper Capital é:%.2f\n",percap2);
+    printf("O Super Poder é:%.2f\n",spoder2);
 /*imprimindo dados da carta 2*/
 
     
