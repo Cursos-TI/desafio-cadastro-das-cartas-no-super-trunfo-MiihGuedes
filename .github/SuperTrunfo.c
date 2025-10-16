@@ -33,6 +33,7 @@ int main(){
     int resuldpopu;
     int resulpercap;
     int resulspoder;
+    int opcao;
 
 /*declarando variaveis para comparação*/
     printf("Dados da Carta 1\n");
@@ -97,7 +98,78 @@ int main(){
     resulnp = npturistico1 > npturistico2;
     resuldpopu = dpopu1 < dpopu2;
     resulspoder = spoder1 > spoder2;
+/*Fazendo a comparação das cartas*/
 
+if (pib1 > pib2) {
+  printf("Carta 1 %f, venceu \n", pib1 );
+} else {
+ printf("Carta 2 %f, venceu \n", pib2 );
+}
+/*Comparando o pib para ver qual carta é maior*/
+
+printf("Escolha uma opção:\n");
+  printf("1. população\n");
+  printf("2. area\n");
+  printf("3. pib\n");
+  printf("4. numero de pontos turisticos\n");
+  printf("5. densidade populacional\n");
+  printf("6. pib percap\n");
+  printf("7. super poder\n");
+  scanf("%d", &opcao);
+switch (opcao) {
+  case 1:
+    if (populacao1 > populacao2) {
+  printf("Carta 1 %f, venceu \n", populacao1 );
+} else {
+ printf("Carta 2 %f, venceu \n", populacao2 );
+}
+    break;
+  case 2:
+    if (area1 > area2) {
+  printf("Carta 1 %f, venceu \n", area1 );
+} else {
+ printf("Carta 2 %f, venceu \n", area2 );
+}
+    break;
+  case 3:
+    if (pib1 > pib2) {
+  printf("Carta 1 %f, venceu \n", pib1 );
+} else {
+ printf("Carta 2 %f, venceu \n", pib2 );
+}
+    break;
+    case 4:
+    if (npturistico1 > npturistico2) {
+  printf("Carta 1 %f, venceu \n", npturistico1 );
+} else {
+ printf("Carta 2 %f, venceu \n", npturistico2 );
+}
+    break;
+    case 5:
+    if (dpopu1 > dpopu2) {
+  printf("Carta 1 %f, venceu \n", dpopu1 );
+} else {
+ printf("Carta 2 %f, venceu \n", dpopu2 );
+}
+    break;
+    case 2:
+    if (percap1 > percap2) {
+  printf("Carta 1 %f, venceu \n", percap1 );
+} else {
+ printf("Carta 2 %f, venceu \n", percap2 );
+}
+    break;
+    case 2:
+    if (percap1 > percap2) {
+  printf("Carta 1 %f, venceu \n", percap1 );
+} else {
+ printf("Carta 2 %f, venceu \n", percap2 );
+}
+    break;
+  default:
+    // Código a ser executado se nenhum dos casos acima for verdadeiro
+}
+/*Usando switch*/
     printf("Carta 1 \n");
     printf("Estado: %s\n", estado1);
     printf("Código: %s \n", cod1);
