@@ -120,54 +120,69 @@ switch (opcao) {
   case 1:
     if (populacao1 > populacao2) {
   printf("Carta 1 %f, venceu \n", populacao1 );
-} else {
- printf("Carta 2 %f, venceu \n", populacao2 );
+} else if(populacao1 = populacao2) {
+ printf("empate\n" );
+}else {
+printf("Carta 2 %f, venceu \n", populacao2 );
 }
     break;
   case 2:
     if (area1 > area2) {
   printf("Carta 1 %f, venceu \n", area1 );
-} else {
+} else if (area1 = area2){
+  printf("empate\n" );
+} else{
  printf("Carta 2 %f, venceu \n", area2 );
 }
     break;
   case 3:
     if (pib1 > pib2) {
   printf("Carta 1 %f, venceu \n", pib1 );
-} else {
+} else if (pib1 = pib2){
+  printf("Empate \n");
+}else{
  printf("Carta 2 %f, venceu \n", pib2 );
 }
     break;
     case 4:
     if (npturistico1 > npturistico2) {
   printf("Carta 1 %f, venceu \n", npturistico1 );
-} else {
+} 
+else if(npturistico1 = npturistico2){
+  printf("empate \n");
+}else {
  printf("Carta 2 %f, venceu \n", npturistico2 );
 }
     break;
     case 5:
-    if (dpopu1 > dpopu2) {
+    if (dpopu1 < dpopu2) {
   printf("Carta 1 %f, venceu \n", dpopu1 );
+} else if (dpopu1 = dpopu2) {
+  printf("empate \n" );
 } else {
  printf("Carta 2 %f, venceu \n", dpopu2 );
 }
     break;
-    case 2:
+    case 6:
     if (percap1 > percap2) {
   printf("Carta 1 %f, venceu \n", percap1 );
+}else if (percap1 = percap2) {
+  printf("empate \n" );
 } else {
  printf("Carta 2 %f, venceu \n", percap2 );
 }
     break;
-    case 2:
-    if (percap1 > percap2) {
-  printf("Carta 1 %f, venceu \n", percap1 );
+    case 7:
+    if (spoder1 > spoder2) {
+  printf("Carta 1 %f, venceu \n", spoder1 );
+}else if (spoder1 = spoder2) {
+  printf("empate\n");
 } else {
- printf("Carta 2 %f, venceu \n", percap2 );
+ printf("Carta 2 %f, venceu \n", spoder2 );
 }
     break;
   default:
-    // Código a ser executado se nenhum dos casos acima for verdadeiro
+    printf("Empate \n" );
 }
 /*Usando switch*/
     printf("Carta 1 \n");
